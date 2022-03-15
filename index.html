@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Solution Configurator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/view.js" defer></script>
+</head>
+
+<body>
+    <header class="container__logo">
+        <a href="https://www.iubenda.com/en/" target="_blank">
+            <img src="assets/images/pngs/iubenda_logo.png" alt="The logo of the Iubenda company" class="logo__image">
+        </a>
+    </header>
+
+    <main>
+        <div class="main__container--top">
+            <div class="container__domain">
+                <div class="container__domain-image">
+                    <img src="assets/images/svgs/icon_monitor.svg" alt="A monitor icon" class="domain__image">
+                </div>
+                <div class="container__domain-info">
+                    <h5 class="domain__title">www.domain.com</h5>
+                    <h6 class="domain__subtitle">Account & Billing info</h6>
+                </div>
+            </div>
+            <div class="container__rating">
+                <div class="container__rating-info">
+                    <p class="rating__info">Your current compliance rating</p>
+                </div>
+                <div>
+                    <div class="rating__circles">
+                        <svg>
+                            <circle cx="16" cy="16" r="16"></circle>
+                            <circle cx="16" cy="16" r="16"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>23<span>%</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container--center">
+            <div class="container__banner">
+                <div class="container__banner-icon">
+                    <img src="assets/images/svgs/icon_checkmark.svg" alt="Green checkmark" class="banner__icon">
+                </div>
+                <p class="banner__description">Your website has been created and your legal documents have been
+                    generated. Setup your cookie banner and privacy policy button to complete the integration.</p>
+                <img src="assets/images/svgs/icon_times_circle.svg" alt="Circle with an X inside"
+                    class="banner__close-button" tabindex="0">
+            </div>
+            <div class="container__options">
+                <div class="container__switch">
+                    <label class="switch" tabindex="0">
+                        <input type="checkbox" name="first-switch" id="first-switch" checked>
+                        <span class="switch__slider"></span>
+                    </label>
+                    <label for="first-switch" class="switch__label">Add a cookie banner</label>
+                </div>
+                <div class="js-container__first-option">
+                    <div class="container__position-theme">
+                        <div class="container__position">
+                            <label for="position" class="section__title">Position</label>
+                            <label for="btn__dropdown" class="select__dropdown">
+                                <input type="checkbox" id="btn__dropdown">
+                                <span class="btn__dropdown" tabindex="0"></span>
+                            </label>
+                            <div class="select__option--selected">
+                                <img src="assets/images/jpegs/position_top.jpeg" alt="The chosen banner"
+                                    class="select__image--selected">
+                            </div>
+                            <div class="select__options hidden">
+                                <div class="select__option">
+                                    <img src="assets/images/jpegs/position_top.jpeg"
+                                        alt="A banner at the top of the selection" class="select__image" tabindex="0">
+                                </div>
+                                <div class="select__option">
+                                    <img src="assets/images/jpegs/position_center.jpeg"
+                                        alt="A banner in the center of the selection" class="select__image"
+                                        tabindex="0">
+                                </div>
+                                <div class="select__option">
+                                    <img src="assets/images/jpegs/position_bottom.jpeg"
+                                        alt="A banner at the bottom of the selection" class="select__image"
+                                        tabindex="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__theme">
+                            <label class="section__title">Theme</label>
+                            <div class="container__theme-options">
+                                <label for="dark-theme">
+                                    <input type="radio" name="theme" id="dark-theme" value="dark-theme" checked>
+                                    <div class="container__image container__image--theme" tabindex="0">
+                                        <img src="assets/images/pngs/fake_banner_dark.png" alt="A dark banner">
+                                    </div>
+                                    <span class="image__title image__title--theme">Dark</span>
+                                </label>
+                                <label for="light-theme">
+                                    <input type="radio" name="theme" id="light-theme" value="light-theme">
+                                    <div class="container__image container__image--theme" tabindex="0">
+                                        <img src="assets/images/pngs/fake_banner_light.png" alt="A light banner">
+                                    </div>
+                                    <span class="image__title image__title--theme">Light</span>
+                                </label>
+                                <label for="custom-style">
+                                    <input type="radio" name="theme" id="custom-style" value="custom-style">
+                                    <div class="container__image container__image--theme" tabindex="0">
+                                        <span class="theme__add-custom-theme">+</span>
+                                    </div>
+                                    <span class="image__title image__title--theme">Custom style</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__legislation">
+                        <label class="section__title">Legislation</label>
+                        <div class="container__legislation-options">
+                            <label for="gdpr-only">
+                                <input type="radio" name="legislation" id="gdpr-only" value="gdpr-only" checked>
+                                <div class="container__option" tabindex="0">
+                                    <span class="option__title option__title--legislation">GDPR Only</span>
+                                </div>
+                            </label>
+                            <label for="ccpa-only">
+                                <input type="radio" name="legislation" id="ccpa-only" value="ccpa-only">
+                                <div class="container__option" tabindex="0">
+                                    <span class="option__title option__title--legislation">CCPA Only</span>
+                                </div>
+                            </label><label for="gdpr-ccpa">
+                                <input type="radio" name="legislation" id="gdpr-ccpa" value="gdpr-ccpa">
+                                <div class="container__option" tabindex="0">
+                                    <span class="option__title option__title--legislation">Both</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="container__consent">
+                        <label class="section__title">Require consent from</label>
+                        <div class="container__consent-options">
+                            <label for="eu-only">
+                                <input type="radio" name="consent" id="eu-only" value="eu-only" checked>
+                                <div class="container__option container__option--eu" tabindex="0">
+                                    <span class="option__title option__title--consent">EU Only</span>
+                                </div>
+                            </label>
+                            <label for="world-wide">
+                                <input type="radio" name="consent" id="world-wide" value="world-wide">
+                                <div class="container__option container__option--world" tabindex="0">
+                                    <span class="option__title option__title--consent">World Wide</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="container__banner-buttons">
+                        <label class="section__title">Banner buttons</label>
+                        <div class="checkbox__options">
+                            <label for="accept-customize" class="checkbox__option" tabindex="0">
+                                <input type="checkbox" name="banner-buttons" id="accept-customize"
+                                    value="accept-customize" checked>
+                                <span class="checkbox-option__checkmark"></span>
+                                Explicit Accept and Customize
+                                buttons
+                            </label>
+                            <label for="reject" class="checkbox__option" tabindex="0">
+                                <input type="checkbox" name="banner-buttons" id="reject" value="reject" checked>
+                                <span class="checkbox-option__checkmark"></span>
+                                Explicit Reject button
+                            </label>
+                        </div>
+                    </div>
+                    <div class="container__other-options">
+                        <label class="section__title">Other options</label>
+                        <div class="checkbox__options">
+                            <label for="iab-transparency-consent" class="checkbox__option" tabindex="0">
+                                <input type="checkbox" name="other-options" id="iab-transparency-consent"
+                                    value="iab-transparency-consent" checked>
+                                <span class="checkbox-option__checkmark"></span>
+                                Enable IAB Transparency and Consent Framework -&nbsp<a href="#" class="learn-more">
+                                    Learn
+                                    more</a>
+                            </label>
+                            <div class="container__iab-warning">
+                                <div class="container__iab-warning-message">
+                                    <img src="assets/images/svgs/icon_exclamation_circle.svg"
+                                        alt="An exclamation mark inside a circle" class="iab-warning__icon">
+                                    <span class="iab-warning__message">You may should activate this feature if you show
+                                        ads on your website</span>
+                                </div>
+                                <!-- TODO Rendere accessibile aria-label -->
+                            </div>
+                            <label for="google-amp-support" class="checkbox__option" tabindex="0">
+                                <input type="checkbox" name="other-options" id="google-amp-support"
+                                    value="google-amp-support" checked>
+                                <span class="checkbox-option__checkmark"></span>
+                                Enable Google AMP Support
+                                <div class="container__tooltip">
+                                    <img src="assets/images/svgs/icon_question_circle.svg"
+                                        alt="A question mark inside a circle" class="tooltip__image">
+                                    <span class="tooltip__text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+                                        quisquam.
+                                    </span>
+                                </div>
+                            </label>
+                            <label for="automatic-block" class="checkbox__option" tabindex="0">
+                                <input type="checkbox" name="other-options" id="automatic-block" value="automatic-block"
+                                    checked>
+                                <span class="checkbox-option__checkmark"></span>
+                                Automatically block scripts detected by the plugin
+                                <div class="container__tooltip">
+                                    <img src="assets/images/svgs/icon_question_circle.svg"
+                                        alt="A question mark inside a circle" class="tooltip__image">
+                                    <span class="tooltip__text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+                                        quisquam.
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__switch">
+                    <label class="switch" tabindex="0">
+                        <input type="checkbox" name="second-switch" id="second-switch" checked>
+                        <span class="switch__slider"></span>
+                    </label>
+                    <label for="second-switch" class="switch__label">Add the privacy policy button</label>
+                </div>
+                <div class="js-container__second-option">
+                    <div class="container__button-style">
+                        <label class="section__title">Button style</label>
+                        <div class="container__button-style-options">
+                            <label for="light-button">
+                                <input type="radio" name="button-style" id="light-button" value="light-button" checked>
+                                <div class="container__image container__image--button-style" tabindex="0">
+                                    <img src="assets/images/pngs/fake_button_light.png" alt="A light button">
+                                </div>
+                                <span class="image__title image__title--button-style">Light</span>
+                            </label>
+                            <label for="dark-button">
+                                <input type="radio" name="button-style" id="dark-button" value="dark-button">
+                                <div class="container__image container__image--button-style" tabindex="0">
+                                    <img src="assets/images/pngs/fake_button_dark.png" alt="A dark button">
+                                </div>
+                                <span class="image__title image__title--button-style">Dark</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="container__button-position">
+                        <label class="section__title">Button position</label>
+                        <div class="container__radio-options">
+                            <label for="automatic-button-integration" class="container__radio-option">
+                                <input type="radio" name="button-integration" id="automatic-button-integration"
+                                    value="automatic-button-integration" checked>
+                                <span class="radio-option__button" tabindex="0"></span>
+                                Put automatically button on footer
+                            </label>
+                            <label for="manual-button-integration" class="container__radio-option">
+                                <input type="radio" name="button-integration" id="manual-button-integration"
+                                    value="manual-button-integration">
+                                <span class="radio-option__button" tabindex="0"></span>
+                                Integrate button manually
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container--bottom">
+            <a href="#" class="reset__link">Reset settings</a>
+            <button class="integrate__btn">Integrate</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__links">
+            <a href="#" class="footer__link">Documentation</a>
+            <a href="#" class="footer__link">Contact support</a>
+        </div>
+    </footer>
+</body>
+
+</html>
