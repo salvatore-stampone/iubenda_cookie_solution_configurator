@@ -517,7 +517,7 @@ input:checked + .btn__dropdown::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/images/svgs/icon_ue_flag.svg);
+    background-image: url(../assets/images/svgs/icon_ue_flag.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 8px 4px;
@@ -531,7 +531,7 @@ input:checked + .btn__dropdown::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/images/svgs/icon_world.svg);
+    background-image: url(../assets/images/svgs/icon_world.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 8px 4px;
